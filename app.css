@@ -1,0 +1,74 @@
+
+
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+}
+
+.gamer {
+	height: 100px;
+	width: 100px;
+	margin-top: 1vh;
+	margin-left: 1vw;
+	background: blue;
+	border-radius: 10px;
+
+
+	/*define animation name */
+	animation-name: iCallTopBecauseImAMan;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	position: relative;
+}
+
+
+@keyframes iCallTopBecauseImAMan {
+	0% {
+		/* top -left top */
+		top: 1vh;
+		left: 1vw;
+		background: yellow;
+	}
+
+	/*50% {
+		background: black;
+		top: calc(100vh - 100px);
+	}*/
+	25% {
+	top: calc(100vh - 100px - 1vh);
+	left: 1vw;
+	}
+
+	50% {
+		top: calc(100vh - 100px - 1vh);
+		left: calc(99vw - 100px - 1vw);
+	}
+
+	75% {
+		top: 1vh;
+		left: calc(98vw - 100px);
+	}
+
+	100% {
+		top: 1vh;
+		left: 1vw;
+	}
+}
+/*
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+*/
+
